@@ -1,23 +1,22 @@
 {
   "files": {
     "main.css": "/borodastov/redux/static/css/main.d1b05096.chunk.css",
-    "main.js": "/borodastov/redux/static/js/main.bfcfda07.chunk.js",
-    "main.js.map": "/borodastov/redux/static/js/main.bfcfda07.chunk.js.map",
+    "main.js": "/borodastov/redux/static/js/main.988ca188.chunk.js",
+    "main.js.map": "/borodastov/redux/static/js/main.988ca188.chunk.js.map",
     "runtime-main.js": "/borodastov/redux/static/js/runtime-main.3308f2b9.js",
     "runtime-main.js.map": "/borodastov/redux/static/js/runtime-main.3308f2b9.js.map",
-    "static/js/2.60c265c7.chunk.js": "/borodastov/redux/static/js/2.60c265c7.chunk.js",
-    "static/js/2.60c265c7.chunk.js.map": "/borodastov/redux/static/js/2.60c265c7.chunk.js.map",
+    "static/js/2.61ef665e.chunk.js": "/borodastov/redux/static/js/2.61ef665e.chunk.js",
+    "static/js/2.61ef665e.chunk.js.map": "/borodastov/redux/static/js/2.61ef665e.chunk.js.map",
     "index.html": "/borodastov/redux/index.html",
-    "precache-manifest.fe03721d74a692fa5ed824400ee80345.js": "/borodastov/redux/precache-manifest.fe03721d74a692fa5ed824400ee80345.js",
+    "precache-manifest.7dee03858c5418720d54f79c2f42f85e.js": "/borodastov/redux/precache-manifest.7dee03858c5418720d54f79c2f42f85e.js",
     "service-worker.js": "/borodastov/redux/service-worker.js",
     "static/css/main.d1b05096.chunk.css.map": "/borodastov/redux/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.60c265c7.chunk.js.LICENSE.txt": "/borodastov/redux/static/js/2.60c265c7.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/borodastov/redux/static/media/logo.5d5d9eef.svg"
+    "static/js/2.61ef665e.chunk.js.LICENSE.txt": "/borodastov/redux/static/js/2.61ef665e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3308f2b9.js",
-    "static/js/2.60c265c7.chunk.js",
+    "static/js/2.61ef665e.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.bfcfda07.chunk.js"
+    "static/js/main.988ca188.chunk.js"
   ]
 }
