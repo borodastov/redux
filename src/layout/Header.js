@@ -6,7 +6,9 @@ function Header(props) {
     <div>
     Hello! {props.name} {props.a}
     <hr/>
-     <button> - </button> {props.count} <button>+</button>
+     <button> - </button>
+      {props.count}
+      <button>+</button>
     <hr/>
     </div>
   );
