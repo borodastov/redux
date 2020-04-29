@@ -1,17 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 
 function Footer(props) {
-  return (
+
+    const [name,setName] = useState('');
+    const save =() => {
+        props.changeName(name);
+        setName('');
+    }
+
+    return (
     <div>
-    Hello----! {props.name}
+      <button onClick={props.minus}>-</button>
+      <button onClick={props.plus}>+</button>
+<hr/>
+        Change name:
+        <input type="text" value={name} onChange={e => setName(e.target.value)}/>
+        <button onClick={save}>Save</button>
     </div>
   );
 }
 
-const mapDispatchToProps = state => ({
-  name: state.name
+const mapStateToProps = state => ({
+
 });
 
-export default connect(mapDispatchToProps)(Footer);
+const mapDispatchToProps = dispatch => ({
+  minus: () => dispatch({ type: 'MINUS'}),
+  plus: () => dispatch({type: 'PLUS'}),
+    changeName: (name) => dispatch ({ type: 'CHANGE_NAME', payload: name})
+});
+
+export default connect(mapStateToProps, mapDispatchToProps, )(Footer);
 
