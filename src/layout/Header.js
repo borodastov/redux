@@ -4,7 +4,7 @@ import mapStateToProps from "react-redux/lib/connect/mapStateToProps";
 
 function Header(props) {
     console.log(props.state)
-    const {field} = props;
+    const {field} = props ;
     const click = (i) => {
         props.click(i);
     }
