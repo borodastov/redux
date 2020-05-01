@@ -6,7 +6,7 @@ function Header(props) {
     console.log(props.state)
     const {field} = props ;
     const click = (i) => {
-        props.click(i);
+        props.click(i) ;
     }
 
     return (
