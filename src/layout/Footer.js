@@ -11,12 +11,12 @@ function Footer(props) {
 
     return (
     <div>
-      <button onClick={props.minus}>-</button>
-      <button onClick={props.plus}>+</button>
-<hr/>
-        Change name:
-        <input type="text" value={name} onChange={e => setName(e.target.value)}/>
-        <button onClick={save}>Save</button>
+{/*      <button onClick={props.minus}>-</button>*/}
+{/*      <button onClick={props.plus}>+</button>*/}
+{/*<hr/>*/}
+{/*        Change name:*/}
+{/*        <input type="text" value={name} onChange={e => setName(e.target.value)}/>*/}
+{/*        <button onClick={save}>Save</button>*/}
     </div>
   );
 }

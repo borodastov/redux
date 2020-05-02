@@ -39,9 +39,9 @@ function Header(props) {
             {/*</table>*/}
 
             Current Player: {props.players[props.currentPlayer]}
-            <hr/>
-            Count {props.count}
-            <hr/>
+            {/*<hr/>*/}
+            {/*Count {props.count}*/}
+            {/*<hr/>*/}
         </div>
     );
 }
