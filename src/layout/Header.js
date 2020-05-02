@@ -1,10 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import mapStateToProps from "react-redux/lib/connect/mapStateToProps";
+// import mapStateToProps from "react-redux/lib/connect/mapStateToProps";
 
 function Header(props) {
     console.log(props.state)
     const {field} = props ;
+
     const click = (i) => {
         props.click(i) ;
     }
@@ -37,7 +38,7 @@ function Header(props) {
             {/*  </tr>*/}
             {/*</table>*/}
 
-            Hello! {props.name} {props.a}
+            Current Player: {props.players[props.currentPlayer]}
             <hr/>
             Count {props.count}
             <hr/>
@@ -46,16 +47,22 @@ function Header(props) {
 }
 
 
-const mapDispatchToProps = state => ({
+const mapStateToProps = state => ({
 
     state: state,
     field: state.field,
     name: state.name,
+    players: state.players,
     a: state.age,
-    count: state.count
+    count: state.count,
+    currentPlayer: state.currentPlayer
+});
+
+const mapDispatchToProps = dispatch => ({
+    click: (i) => dispatch({type: 'CLICK', payload: i})
 });
 
 //const mapDispatchToProps = dispatch => ({});
 
-export default connect(mapDispatchToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
 

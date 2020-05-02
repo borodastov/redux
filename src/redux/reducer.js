@@ -1,10 +1,9 @@
 const initialState = {
-    player1: 'Jim',
-    player2: 'Bim',
+    players: ['Jim',"Bim"],
     field: [
-        null, 'X', null,
         null, null, null,
-        null, 'O', null
+        null, null, null,
+        null, null, null
     ],
     currentPlayer: 1,
     name: 'Jim',
@@ -33,10 +32,21 @@ switch (action.type)
     case 'CLICK':
 
         const newField = [...state.field];
-        newField[action.payload] = 'X';
+        let newCurrentPlayer = state.currentPlayer;
+        if (state.currentPlayer  == 1)
+        {
+            newField[action.payload] = 'O';
+            newCurrentPlayer = 0;
+        }
+        else {
+            newField[action.payload] = 'X';
+            newCurrentPlayer = 1;
+        }
+
         return {
             ...state,
-            field: newField
+            field: newField,
+            currentPlayer: newCurrentPlayer
         };
 
 
