@@ -33,14 +33,16 @@ switch (action.type)
 
         const newField = [...state.field];
         let newCurrentPlayer = state.currentPlayer;
-        if (state.currentPlayer  == 1)
-        {
-            newField[action.payload] = 'O';
-            newCurrentPlayer = 0;
-        }
-        else {
-            newField[action.payload] = 'X';
-            newCurrentPlayer = 1;
+        if (!newField[action.payload]) {
+
+
+            if (state.currentPlayer == 1) {
+                newField[action.payload] = 'O';
+                newCurrentPlayer = 0;
+            } else {
+                newField[action.payload] = 'X';
+                newCurrentPlayer = 1;
+            }
         }
 
         return {
