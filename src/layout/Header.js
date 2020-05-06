@@ -13,6 +13,7 @@ function Header (props) {
     const enterName = (i) => {
         const newName = document.getElementById(`NameOfPlayer${i}`).value;
         props.nameOfPlayer([i,newName]);
+        document.getElementById(`NameOfPlayer${i}`).value = "";
     }
     if (props.players[0]===null)
         return (
@@ -23,7 +24,7 @@ function Header (props) {
             </div>
 
         )
-    if (props.players[1]===null)
+    else if (props.players[1]===null)
         return (
             <div>
                 Enter name of Player2:
@@ -68,9 +69,9 @@ function Header (props) {
             {/*</table>*/}
 
             Current Player: {props.players[props.currentPlayer]}
-            <div>
-                Winner: {props.players[props.winner]}
-            </div>
+            {/*<div>*/}
+            {/*    Winner: {props.players[props.winner]}*/}
+            {/*</div>*/}
             {/*<hr/>*/}
             {/*Count {props.count}*/}
             {/*<hr/>*/}
