@@ -1,5 +1,5 @@
 const initialState = {
-    players: [null, null],
+    players: [null, null]  ,
     field: [
         null, null, null,
         null, null, null,
